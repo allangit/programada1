@@ -17,4 +17,14 @@ class Redes_neuronales:
 	
 		self.model=Sequential()
 		self.model.add(Dense(12,input_dim=8,activation='relu'))
+		self.model.add(Dense(8,activation='relu'))
+		self.model.add(Dense(1,activation='sigmoid'))
+
+	def compilar(self):
+
+		self.compile()
+
+		
+
+	
 		
